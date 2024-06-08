@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF Functions</title>
+</head>
+
+<body>
+    <!-- 1. check numbers positive and negative? (using simple function) -->
+    <!-- <script>
+        let a = Number(prompt("enter a number1:"));
+        let b = Number(prompt("enter a number2:"));
+        let ans;
+        ans = a+b;
+        console.log("ans is:",ans);
+        function number() {
+            if(ans  > 0){
+                console.log("this ans is positive");
+            }
+            else if (ans < 0){
+                console.log("this ans is negative");
+            }
+            else{
+                console.log("this ans is zero");
+            }    
+        }
+        number();
+    </script> -->
+
+    <!-- 2. check numbers positive and negative? (using no return with parameter) -->
+    <!-- <script>
+        function num(a) {
+            if(a > 0){
+                console.log("number is positive...");
+            }
+            else if(a < 0){
+                console.log("number is negative...");
+            }
+            else{
+                console.log("number is zero...");
+            }
+        }
+        num(9);
+        num(0);
+        num(-9);
+    </script> -->
+
+    <!-- 3.  find which number is greater in 4 numbers using nested if else. (using simple function) -->
+    <!-- <script>
+        let a = Number(prompt("enter a number of a"));
+        let b = Number(prompt("enter a number of b"));
+        let c = Number(prompt("enter a number of c"));
+        let d = Number(prompt("enter a number of d"));
+
+        function num() {
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        console.log("a is big");
+                    } else {
+                        console.log("d is big");
+                    }
+                } else {
+                    if (c > d) {
+                        console.log("c is big");
+                    } else {
+                        console.log("d is big");
+                    }
+                }
+            } else {
+                if (b > c) {
+                    if (b > d) {
+                        console.log("b is big");
+                    } else {
+                        console.log("d is big");
+                    }
+                } else {
+                    if (c > d) {
+                        console.log("c is big");
+                    } else {
+                        console.log("d is big");
+                    }
+                }
+            }
+        }
+        num();
+    </script> -->
+
+    <!-- 4. find which number is greater in 4 numbers using ladder if else. (using no return with parameter function) -->
+    <!-- <script>
+       function num(no1 ,no2, no3, no4) {
+            if (no1 >= no2 && no1 >= no3 && no1 >= no4) {
+                console.log("no1 is greater");
+            }
+            else if (no2 >= no1 && no2 >= no3 && no2 >= no4) {
+                console.log("no2 is greater");
+            }
+            else if (no3 >= no1 && no3 >= no2 && no3 >= no4) {
+                console.log("no3 is greater");
+            }
+            else {
+                console.log("no4 is greater");
+            }
+        }
+        num(1, 2, 3, 0);
+    </script> -->
+
+    <!-- 5. add two number of addition, subtraction, multiplication, division (using simple function) -->
+    <!-- <script>
+        let oparetor = prompt("enter operator (+,-,*,/):");
+        let num1 = Number(prompt("enter a number1"));
+        let num2 = Number(prompt("enter a numbwr2"));
+
+        function opre() {
+            if (oparetor == '+') {
+                console.log("your ans is :", num1 + num2);
+            }
+            else if (oparetor == '-') {
+                console.log("your ans is :", num1 - num2);
+            }
+            else if (oparetor == '*') {
+                console.log("your ans is :", num1 * num2);
+            }
+            else if (oparetor == '/') {
+                console.log("your ans is :", num1 / num2);
+            }
+            else {
+                console.log("invalid oparetor...");
+            }
+        }
+        opre();
+    </script> -->
+
+    <!-- 6.  perform a swapping of two variables.(all function use) -->
+    <!-- <script>
+        let swap = (a,b) => {
+            [a,b]=[b,a]  
+            console.log(a);
+        }
+        
+        swap(10,20);
+    </script> -->
+
+    <!-- 7. find which number is greater in 3 numbers using nested if else.(using all function) -->
+    <!-- <script>
+        let no1 = Number(prompt("enter a number of no1"));
+        let no2 = Number(prompt("enter a number of no2"));
+        let no3 = Number(prompt("enter a number of no3"));
+
+        let num = () => {
+            if (no1 >= no2 && no1 >= no3) {
+                console.log("no1 is greater");
+            }
+            else if (no2 >= no1 && no2 >= no3) {
+                console.log("no2 is greater");
+            }
+            else if (no3 >= no1 && no3 >= no2) {
+                console.log("no3 is greater");
+            }
+        }
+
+        num();
+    </script> -->
+
+    <!-- 8.  create a basic calculator using switch case. (simple function use)Ex. User input a,b and select choice + , - , * , /  -->
+    <!-- <script>
+        function name() {
+            let operator = prompt('Enter operator ( either +, -, * or / ): ');
+            let num1 = parseFloat(prompt('Enter first number: '));
+            let num2 = parseFloat(prompt('Enter second number: '));
+            let ans;
+
+            switch (operator) {
+                case '+':
+                    ans = num1 + num2;
+                    break;
+
+                case '-':
+                    ans = num1 - num2;
+                    break;
+
+                case '*':
+                    ans = num1 * num2;
+                    break;
+
+                case '/':
+                    ans = num1 / num2;
+                    break;
+
+                default:
+                    console.log('Invalid operator');
+                    break;
+            }
+            console.log("Your ans is:", ans);
+        }
+        name();   
+    </script> -->
+
+    <!-- 9.  input angles of a triangle and check whether triangle is valid or not.(using all functions) -->
+    <!-- <script>
+        let a = Number(prompt("enter value of a"));
+        let b = Number(prompt("enter a value of b"));
+        let c = Number(prompt("enter a value of c"));
+        ans = a+b+c;
+        console.log(ans);
+
+        let triangle = () =>
+         (ans == 180) ? console.log("it is a triangle")
+            : console.log("it is not a triangle");
+        
+    triangle();
+    </script> -->
+
+    <!-- 10. decide that you eligible for voting. (using all functions) -->
+    <!-- <script>
+        let age = Number(prompt("enter a age"));
+
+        let vote = () => 
+            (age >= 18) ? console.log("eligible..")
+            : console.log("not eligible..");
+
+        vote();
+
+    </script> -->
+
+</body>
+
+</html>
